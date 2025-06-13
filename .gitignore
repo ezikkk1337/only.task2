@@ -1,0 +1,6 @@
+db
+html/*
+!html/local/
+!html/form/
+
+.DS_Store
