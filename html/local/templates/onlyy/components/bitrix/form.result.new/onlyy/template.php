@@ -24,6 +24,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
             </div>
         <?php endif; ?>
         <?= $arResult["FORM_HEADER"] ?>
+        <div class="contact-form__form">
         <div class="contact-form__form-inputs">
                 <?php foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion): ?>
                     <?php if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] === 'hidden'): ?>
@@ -77,6 +78,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
                            name="web_form_submit"
                            value="<?= htmlspecialcharsbx(trim($arResult["arForm"]["BUTTON"]) ?: GetMessage("FORM_ADD")) ?>"
                            class="form-button contact-form__bottom-button" />
+                    </div>
                 </div>
             </div>
 
